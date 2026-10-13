@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: DEPLOY
+  datasource:
+    url: jdbc:sqlserver://${YOUR SERVER NAME}}.database.windows.net:1433;databaseName=${YOUR DATABASE NAME}};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: ${YOUR USERNAME}
+    password: ${YOUR PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+azure:
+  storage:
+    connection-string: ${AZURE STORAGE CONNECTION STRING}
+    table-name: EmployeeLogs
